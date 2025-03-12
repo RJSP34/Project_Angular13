@@ -1,0 +1,32 @@
+<form [formGroup]="SearchForm" class ="center" (ngSubmit)="onSubmit()" >
+
+  <div class="search-bar">
+    <label class="center-block">Enter Name:</label>
+     <input type="text"  class="searchTerm" id="search" name="search" placeholder="What are you trying to search for" formControlName="Value" ng-model="Value" required>
+  </div>
+  <div *ngIf="SearchForm.controls['Value'].invalid && (SearchForm.controls['Value'].dirty || SearchForm.controls['Value'].touched)" class="alert alert-danger">
+   Search Term is required.
+  </div>
+
+   <div>
+     <br>
+   <button>Click me</button>
+   </div>
+   <div id="res">
+{{ res }}
+<ngx-charts-pie-chart
+    [results]="saleData"
+    [legend]="true"
+    [legendTitle]="'Product Sale Report'"
+    [view]="[1000,300]"
+    [labels]="true" >
+</ngx-charts-pie-chart>
+   </div>
+   <div class="bottom"></div>
+  </form>
+
+  <div class="example-box" cdkDrag>
+    Drag me around
+  </div>
+
+

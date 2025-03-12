@@ -1,0 +1,25 @@
+<div class="header">
+  <a href="#default" class="logo">Search-Bar</a>
+  <div class="header-right">
+    <a class="sidebar-open" href="#home">Home</a>
+    <a href="#about">
+      <div class="side">
+      <button class="sidebar-open btnsidebar" (click)="sidebarShow = !sidebarShow">
+       Menu
+      </button>
+    </div> </a>
+  </div>
+</div>
+<div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
+  <button class="sidebar-close" (click)="sidebarShow = !sidebarShow">x</button>
+  <div class="sidebar-content">
+      <h2 class="set-align"></h2>
+      <div class="set-sidebar-text">Dashbord</div>
+      <div class="set-sidebar-text">Home</div>
+      <div class="set-sidebar-text">Profile</div>
+      <div class="set-sidebar-text">Message</div>
+      <div class="set-sidebar-text">Help</div>
+      <div class="set-sidebar-text">Setting</div>
+      <div class="set-sidebar-text">Sign Out</div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+.center{
+text-align: center;
+margin-top: 7ch;
+margin-bottom: 10ch;
+margin-left: 10ch;
+margin-right: 10ch;
+border-style: double ;
+background-color: aqua;
+border-color: black;
+}
+.bottom{
+  margin-bottom: 40ch;
+
+}
+.example-box{
+  border-color: yellow;
+
+  border-style: double ;
+
+}
