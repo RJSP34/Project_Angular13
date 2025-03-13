@@ -1,10 +1,10 @@
 <?php
 class DbConfig{
 
-    private $_host='682ku4wu7pai.us-east-4.psdb.cloud'; //host name
-    private $_username='vp3ejnbcqvrs'; //username for the database
-    private $_password='pscale_pw_rzTvRunfg-QQKqnnSDWVrPiHw5CV__lV0ClRjECIb_o';  //password for the database
-    private $_database='database'; //database name
+    private $_host=''; //host name
+    private $_username=''; //username for the database
+    private $_password='';  //password for the database
+    private $_database=''; //database name
 
     protected $connection;
     public function __construct(){
